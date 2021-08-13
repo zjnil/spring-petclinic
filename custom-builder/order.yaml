@@ -23,6 +23,13 @@
   {
     "group": [
       {
+        "id": "tanzu-buildpacks/python"
+      }
+    ]
+  },
+  {
+    "group": [
+      {
         "id": "tanzu-buildpacks/php"
       }
     ]

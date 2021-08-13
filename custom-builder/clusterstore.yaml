@@ -5,13 +5,14 @@ kind: ClusterStore
 metadata:
   name: #@ "store-" + data.values.USER_ID
 spec:
-  sources:
-  - image: harbor-lab.livefire.dev/tbs/build-service/tanzu-buildpacks_go@sha256:64ba98089642bdb1ae22fde9b12fb905e0034a2e99c4564249bbc5190dcef8f9
-  - image: harbor-lab.livefire.dev/tbs/build-service/tanzu-buildpacks_java@sha256:b503532498665b6382ba3ad7b74a4b9e0c1ee76e09c5c176b30479147236c319
-  - image: harbor-lab.livefire.dev/tbs/build-service/tanzu-buildpacks_nodejs@sha256:5050ac76d043395422e4ae3cab74d5bb31dc4e9f66414d0be3c4ebb7d1276312
-  - image: harbor-lab.livefire.dev/tbs/build-service/tanzu-buildpacks_java-native-image@sha256:12f8ff3e904d1698442c05a73a7318bfbbaf535e582704ff02f675d1fe4ebe7f
-  - image: harbor-lab.livefire.dev/tbs/build-service/tanzu-buildpacks_dotnet-core@sha256:9ecfbe3c3565f6bc15d5aa116615cf33195a5d27133438d285f9d812f5c72664
-  - image: harbor-lab.livefire.dev/tbs/build-service/tanzu-buildpacks_php@sha256:fd5abb334f4adbcf46f42977992af145db04fb262d4c516ff4264f94e1fcd689
-  - image: harbor-lab.livefire.dev/tbs/build-service/tanzu-buildpacks_nginx@sha256:e67d5cd2e5240a9eb7a899b9b5d979ad85d0cf6c8182e15424516dac9f577371
-  - image: harbor-lab.livefire.dev/tbs/build-service/tanzu-buildpacks_httpd@sha256:34989fb8e264ccaea7916a9017b306d621b017920f71439fc515164ac0484cf5
-  - image: harbor-lab.livefire.dev/tbs/build-service/paketo-buildpacks_procfile@sha256:bf6a4265db23ae25b34d402cd24e04c36dccdf24d6a6b9297f1d154a9d0b8062
+  sources:  
+  - image: registry.lab.livefire.dev/tanzu/build-service/tanzu-buildpacks_go@sha256:27b33492bfb9d8116b2689237161aecdaf7033a0f4b1e917481a70b58575ab2d
+  - image: registry.lab.livefire.dev/tanzu/build-service/tanzu-buildpacks_java@sha256:e7fd464a33a3c72c06874810719a03f88a3d45434c982ee9c0ae8f6434a53697
+  - image: registry.lab.livefire.dev/tanzu/build-service/tanzu-buildpacks_nodejs@sha256:bc68b0d3c42eff1b9729c6a20fd22a1669a463c8adc4bbae2757972bcd5a6476
+  - image: registry.lab.livefire.dev/tanzu/build-service/tanzu-buildpacks_java-native-image@sha256:1470f053e4cc0d912d356f2299ae3fa195ab1baaabf1ce095cde184dab6759cc
+  - image: registry.lab.livefire.dev/tanzu/build-service/tanzu-buildpacks_dotnet-core@sha256:6d57e312e7ac86f78ece4afcc3967e5314fbb71fe592800fd6f0f58bd923945a
+  - image: registry.lab.livefire.dev/tanzu/build-service/tanzu-buildpacks_python@sha256:6364d1cc1695f9a20a65604d61f6ca8ceb05567d1512f67d13b7c150f326bf08
+  - image: registry.lab.livefire.dev/tanzu/build-service/tanzu-buildpacks_php@sha256:27f003c0ad6d45fd78cd9dbb71ae55b5ba1e599d8facfd98269dd29f42028870
+  - image: registry.lab.livefire.dev/tanzu/build-service/tanzu-buildpacks_nginx@sha256:5798dfecab8a4c67bbc3b956b6bef4474c52197b8949f02b8b866e19bfcde71e
+  - image: registry.lab.livefire.dev/tanzu/build-service/tanzu-buildpacks_httpd@sha256:4e15987d21d3d4f0cbc6be0d3b283db1d3f368eb15d0b1b59d835899c8bf946c
+  - image: registry.lab.livefire.dev/tanzu/build-service/paketo-buildpacks_procfile@sha256:cc3910850249adb0b7b2f6850a362dbfbfad1df976b8736ac2c90ff70093fb4e
